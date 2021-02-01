@@ -52,3 +52,10 @@ dict = {
     "teacher": "Socrates",
     "student": "Aristotle",
 }
+
+dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
+
+print()
+print("Exercise 4 answer")
+print(dict)
+print()
