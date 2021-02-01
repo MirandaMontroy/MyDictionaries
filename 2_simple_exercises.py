@@ -5,8 +5,10 @@ sampleDict = {
     "class": {"student": {"name": "Mike", "marks": {"physics": 70, "history": 80}}}
 }
 
+print()
+print("Exercise one answer")
 print(sampleDict["class"]["student"]["marks"]["history"])
-
+print()
 
 # 2) Add 2 inches to the son's height.
 
@@ -17,6 +19,12 @@ dict = {
     "son's weight": 25,
 }
 
+dict["son's height"] += 2
+
+print()
+print("Exercise 2 answer")
+print(dict["son's height"])
+print()
 
 # 3) Given a Python dictionary, Change Brad’s salary to 8500
 
