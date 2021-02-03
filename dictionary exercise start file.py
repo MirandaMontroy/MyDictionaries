@@ -88,16 +88,33 @@ def deal_cards(deck, number):
     # Make sure the number of cards to deal is not
     # greater than the number of cards in the deck.
 
-    if number > 52:
-        print("Too many cards, enter a number below 52")
-        return
-
-    else:
-        print("yeet")
-
+    if number > len(deck):
+        number = len(deck)
+    """
     # Deal the cards and accumulate their values.
+    for count in range(number):
+        card, value = deck.popitem()
+        print(card)
+        hand_val += value
+
+    """
+    import random
+
+    list_of_keys = []
+    # for key in deck:
+    #    list_of_keys.append(key)
+    # print(list_of_keys)
+
+    for count in range(number):
+        card = random.choice(list(deck))
+        value = deck[card]
+        print(card)
+
+        hand_val += value
+        del deck[card]
 
     # Display the value of the hand.
+    print("The value of the hand is:", hand_val)
 
 
 # Call the main function.
