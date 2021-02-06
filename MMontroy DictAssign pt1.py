@@ -24,3 +24,4 @@ for line in infile:
 
 # print the dictionary
 print(textdic)
+infile.close()
